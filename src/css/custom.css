@@ -1,0 +1,42 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+:root {
+  --ifm-color-primary: #0f4c81;
+  --ifm-color-primary-dark: #0d4474;
+  --ifm-color-primary-darker: #0c406e;
+  --ifm-color-primary-darkest: #0a355a;
+  --ifm-color-primary-light: #11548e;
+  --ifm-color-primary-lighter: #125894;
+  --ifm-color-primary-lightest: #1463a8;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --campo-novo: #d81b60;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #6cb3e8;
+  --ifm-color-primary-dark: #4da3e3;
+  --ifm-color-primary-darker: #3d9be0;
+  --ifm-color-primary-darkest: #1f82c9;
+  --ifm-color-primary-light: #8bc3ed;
+  --ifm-color-primary-lighter: #9bcbf0;
+  --ifm-color-primary-lightest: #c9e3f6;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --campo-novo: #ff6b9d;
+}
+
+.campo-novo {
+  color: var(--campo-novo);
+  font-weight: 700;
+}
+
+.exemplo-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--ifm-background-surface-color);
+}

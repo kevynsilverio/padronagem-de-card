@@ -1,0 +1,34 @@
+---
+sidebar_position: 4
+title: Exemplos de preenchimento
+---
+
+# Exemplos de preenchimento
+
+Preencha os campos de forma **clara e objetiva**. Evite texto genérico e não deixe campo obrigatório em branco.
+
+## Preenchimento incorreto
+
+- Campos vazios
+- Informações genéricas, como *"feito ajuste"* ou *"testar funcionalidade"*
+- Critérios de aceite sem alinhamento com o que foi realmente entregue
+- Sem passo a passo para o QA reproduzir o comportamento
+- Sem justificativa quando o critério ficou `Parcial` ou `Não`
+
+## Preenchimento correto
+
+- Todos os campos obrigatórios preenchidos
+- Resumo do que foi feito, principalmente em funcionalidade nova ou mudança relevante
+- Passo a passo para executar e validar o comportamento
+- Critérios de aceite alinhados com a entrega (`Sim`, `Parcial` ou `Não`)
+- Regra de negócio considerada na implementação
+- Justificativa quando houver divergência ou pendência
+
+## Comparativo
+
+| Incorreto | Correto |
+| --- | --- |
+| `feito ajuste` | `Ajustado o fluxo de login para validar e-mail e senha antes de redirecionar ao portal.` |
+| `testar funcionalidade` | `1. Acesse Homologação. 2. Entre com usuário válido. 3. Use Esqueci a senha. 4. Confirme o e-mail de recuperação.` |
+| Critério marcado como `Sim` sem a entrega completa | `Parcial`, com justificativa do que ficou pendente |
+| Campo de regra de negócio em branco | `Usuário só recupera senha se o e-mail estiver cadastrado e ativo.` |

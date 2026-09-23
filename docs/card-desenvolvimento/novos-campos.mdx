@@ -1,0 +1,52 @@
+---
+sidebar_position: 2
+title: Novos campos
+---
+
+# Novos campos do card de Desenvolvimento
+
+Campos adicionados no **fechamento do desenvolvimento**.
+
+## Lista de campos
+
+| Campo | Tipo | Quando preencher |
+| --- | --- | --- |
+| **Resumo da implementação** | Obrigatório | Sempre, no fechamento |
+| **Como validar / reproduzir** | Obrigatório | Sempre, no fechamento |
+| **Critérios de aceite atendidos?** | Obrigatório | Sempre. Opções: `Sim`, `Parcial`, `Não` |
+| **Regra de negócio aplicada na validação** | Obrigatório | Sempre, no fechamento |
+| **Justificativa** | Condicional | Obrigatória se o critério for `Parcial` ou `Não` |
+
+## Resumo da implementação
+
+Registro do que foi desenvolvido ou alterado, principalmente em funcionalidade nova ou mudança relevante.
+
+Descreva o que foi feito, o passo a passo das principais alterações e as informações relevantes.
+
+## Como validar / reproduzir
+
+Passo a passo para executar a funcionalidade desenvolvida e validar o comportamento.
+
+Detalhe o suficiente para o QA conseguir reproduzir sem pedir ajuda.
+
+## Critérios de aceite atendidos?
+
+Alinha o que foi definido na task com o que foi entregue.
+
+Opções:
+
+- `Sim`
+- `Parcial`
+- `Não`
+
+Se a opção for `Parcial` ou `Não`, o campo de justificativa aparece e fica obrigatório.
+
+## Regra de negócio aplicada na validação
+
+Descreva a regra de negócio considerada na validação da funcionalidade e usada para validar a implementação.
+
+## Justificativa
+
+Campo condicional. Explique o motivo da não conformidade ou o que ficou pendente em relação aos critérios de aceite.
+
+É obrigatório quando a opção for `Parcial` ou `Não`.

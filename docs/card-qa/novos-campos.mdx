@@ -1,0 +1,38 @@
+---
+sidebar_position: 2
+title: Novos campos
+---
+
+# Novos campos do card de QA
+
+Campos adicionados para registrar ambiente, versão e o resultado da validação dos critérios de aceite.
+
+## Lista de campos
+
+| Campo | Tipo | Quando preencher |
+| --- | --- | --- |
+| **Ambiente / Versão validada** | Obrigatório | Sempre, na validação |
+| **Critérios de aceite validados?** | Obrigatório | Sempre. Opções: `Sim`, `Parcial`, `Não` |
+| **Justificativa** | Condicional | Obrigatória se o critério for `Parcial` ou `Não` |
+
+## Ambiente / Versão validada
+
+Campo obrigatório para registrar o ambiente e a versão validada.
+
+Exemplo: `Homologação | Portal 4.9.0.0`
+
+## Critérios de aceite validados?
+
+Campo com as opções `Sim`, `Parcial` e `Não`.
+
+- `Sim` — o comportamento principal e os critérios foram validados
+- `Parcial` — o comportamento principal foi validado, mas algum critério ficou pendente
+- `Não` — os critérios não foram atendidos
+
+Se a opção for `Parcial` ou `Não`, a justificativa é obrigatória.
+
+## Justificativa
+
+Ao selecionar `Parcial` ou `Não`, explique a divergência ou o que não pôde ser concluído.
+
+Exemplo: *O comportamento principal foi validado, porém um dos critérios não pôde ser concluído por divergência com a implementação.*
