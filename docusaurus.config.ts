@@ -53,6 +53,12 @@ const config: Config = {
       },
       items: [
         {
+          to: '/',
+          label: 'Preenchimento do Board',
+          position: 'left',
+          exact: true,
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
@@ -63,6 +69,15 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Board',
+          items: [
+            {
+              label: 'Preenchimento do Board',
+              to: '/',
+            },
+          ],
+        },
         {
           title: 'Documentação',
           items: [

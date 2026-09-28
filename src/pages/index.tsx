@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import BoardPreenchimento from '@site/src/components/BoardPreenchimento';
 
 import styles from './index.module.css';
 
@@ -13,15 +13,24 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
+        <p className={styles.kicker}>Página inicial</p>
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Preenchimento do Board
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Modelo preenchido do card de Desenvolvimento. Use este quadro como
+          referência ao fechar a implementação no board.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
+            to="/docs/exemplos-preenchimento">
+            Ver regras de preenchimento
+          </Link>
+          <Link
+            className={clsx('button button--outline button--lg', styles.docButton)}
             to="/docs/intro">
-            Abrir a documentação
+            {siteConfig.title}
           </Link>
         </div>
       </div>
@@ -30,14 +39,13 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
-      description="Nova padronização dos cards de Desenvolvimento e QA para aumentar rastreabilidade e reduzir retrabalho.">
+      title="Preenchimento do Board"
+      description="Como preencher o board: modelo do card de Desenvolvimento, com campos novos, obrigatórios e justificativa condicional.">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <BoardPreenchimento />
       </main>
     </Layout>
   );
