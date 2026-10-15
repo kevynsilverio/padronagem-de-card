@@ -5,24 +5,16 @@ import styles from './styles.module.css';
 
 const campos = [
   {
-    title: 'Resumo da Implementação',
-    text: 'Descreva o que foi feito, passo a passo das principais alterações e informações relevantes.',
+    title: 'Ambiente / Versão validada',
+    text: 'Registre o ambiente e a versão validados. Exemplo: Homologação | Portal 4.9.0.0.',
   },
   {
-    title: 'Como executar / Reproduzir o comportamento',
-    text: 'Descreva o passo a passo para executar a funcionalidade desenvolvida.',
-  },
-  {
-    title: 'Critérios de Aceite atendidos?',
+    title: 'Critérios de aceite validados?',
     text: 'Selecione Sim, Parcial ou Não.',
   },
   {
-    title: 'Regra de negócio aplicada na validação',
-    text: 'Descreva a regra considerada para validar a implementação.',
-  },
-  {
     title: 'Justificativa',
-    text: 'Obrigatória se a opção for Parcial ou Não. Explique a não conformidade ou o que ficou pendente.',
+    text: 'Obrigatória se a opção for Parcial ou Não. Explique a divergência ou o que não pôde ser concluído.',
   },
 ];
 
@@ -31,13 +23,6 @@ export default function BoardPreenchimento(): ReactNode {
     <section className={styles.section}>
       <div className="container">
         <div className={styles.board}>
-          <div className={styles.prototype}>
-            <img
-              src="/img/exemplo-card-dev.png"
-              alt="Exemplo do card de Desenvolvimento com os novos campos obrigatórios"
-            />
-          </div>
-
           <div className={styles.campos}>
             <Heading as="h2">Campos do exemplo</Heading>
             <ol>
@@ -56,21 +41,28 @@ export default function BoardPreenchimento(): ReactNode {
                 <h3>Antes</h3>
                 <ul>
                   <li>Campo obrigatório em branco</li>
-                  <li>Texto genérico, como “feito ajuste”</li>
-                  <li>Critério Sim sem a entrega completa</li>
+                  <li>Ambiente e versão sem registro</li>
+                  <li>Critério Sim sem a validação completa</li>
                   <li>Parcial ou Não sem justificativa</li>
                 </ul>
               </div>
               <div>
                 <h3>Depois</h3>
                 <ul>
-                  <li>Descreva o que mudou de forma objetiva</li>
-                  <li>Inclua o passo a passo para reproduzir o comportamento</li>
-                  <li>Marque Sim, Parcial ou Não com alinhamento à entrega</li>
-                  <li>Registre a regra de negócio usada na validação</li>
+                  <li>Registre o ambiente e a versão validados</li>
+                  <li>Marque Sim, Parcial ou Não alinhado ao que foi testado</li>
+                  <li>Justifique quando for Parcial ou Não</li>
+                  <li>Use o mesmo nome na evidência e no cenário de teste</li>
                 </ul>
               </div>
             </div>
+          </div>
+
+          <div className={`${styles.prototype} ${styles.prototypeEnd}`}>
+            <img
+              src="/img/exemplo-card-qa.png"
+              alt="Exemplo do card de QA com os novos campos obrigatórios"
+            />
           </div>
         </div>
       </div>

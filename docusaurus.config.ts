@@ -46,7 +46,6 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Padronização de Cards',
       logo: {
         alt: 'Padronização de Cards',
         src: 'img/logo.svg',
@@ -54,9 +53,19 @@ const config: Config = {
       items: [
         {
           to: '/',
-          label: 'Preenchimento do Board',
+          label: 'Padronização de Cards',
           position: 'left',
           exact: true,
+        },
+        {
+          to: '/equipe-dev',
+          label: 'Equipe de Dev',
+          position: 'left',
+        },
+        {
+          to: '/equipe-qa',
+          label: 'Equipe QA',
+          position: 'left',
         },
         {
           type: 'docSidebar',
@@ -70,11 +79,19 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Board',
+          title: 'Equipes',
           items: [
             {
-              label: 'Preenchimento do Board',
+              label: 'Padronização de Cards',
               to: '/',
+            },
+            {
+              label: 'Equipe de Dev',
+              to: '/equipe-dev',
+            },
+            {
+              label: 'Equipe QA',
+              to: '/equipe-qa',
             },
           ],
         },

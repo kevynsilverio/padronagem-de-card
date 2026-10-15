@@ -10,3 +10,52 @@
     padding: 2rem 1rem;
   }
 }
+
+.resumo {
+  padding: 2.5rem 0 4rem;
+  text-align: center;
+}
+
+.resumo p {
+  max-width: 720px;
+  margin: 0 auto 1rem;
+  font-size: 1.05rem;
+}
+
+.atalhos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 720px;
+  margin: 1.75rem auto 0;
+}
+
+.atalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 14px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+  color: inherit;
+  text-decoration: none;
+}
+
+.atalho:hover {
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+  color: inherit;
+}
+
+.atalho strong {
+  color: var(--ifm-color-primary);
+}
+
+@media screen and (max-width: 996px) {
+  .atalhos {
+    grid-template-columns: 1fr;
+  }
+}

@@ -41,8 +41,26 @@
   background: var(--ifm-background-surface-color);
 }
 
+.navbar__brand {
+  pointer-events: none;
+  cursor: default;
+}
+
 .exemplo-card img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+@media (min-width: 997px) {
+  .navbar__items:not(.navbar__items--right) {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .navbar__items--right {
+    position: absolute;
+    right: var(--ifm-navbar-padding-horizontal);
+    height: 100%;
+  }
 }
